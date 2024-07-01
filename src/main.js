@@ -64,7 +64,7 @@ const requestJoke = async (firstName, lastName) => {
     console.log(jsonResponse.value);
 }
 
-requestJoke("Clint", "Eastwood");
+requestJoke("Bruce", "Lee");
 
 
 
