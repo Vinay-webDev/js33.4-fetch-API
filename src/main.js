@@ -51,7 +51,7 @@ const postDadJoke = async (jokeObj) => {
         body: JSON.stringify(jokeObj),
     })
     const jsonResponse = await response.json();
-    console.log(jsonResponse);
+    console.log(jsonResponse.headers);
 }
 
 postDadJoke(jokeObject);
