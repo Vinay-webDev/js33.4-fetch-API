@@ -38,6 +38,7 @@ const postDadJoke = async (jokeObj) => {
 postDadJoke(jokeObject); */
 
 // one more time for practice***
+/*
 const jokeObject = {
     id: 'OfNRfaaUSf', 
     joke: 'When I left school, I passed every one of my exams… Greek Mythology. It always was my achilles elbow'
@@ -54,10 +55,16 @@ const postDadJoke = async (jokeObj) => {
     console.log(jsonResponse.headers);
 }
 
-postDadJoke(jokeObject);
+postDadJoke(jokeObject); */
 
 // url
+const requestJoke = async (firstName, lastName) => {
+    const response = await fetch(`http://api.icndb.com/jokes/random?firstName=${firstName}&lastName=${lastName}`);
+    const jsonResponse = await response.json();
+    console.log(jsonResponse.value);
+}
 
+requestJoke("Clint", "Eastwood");
 
 
 
